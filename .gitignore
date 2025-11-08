@@ -1,0 +1,8 @@
+# ===========================================
+#   GITIGNORE pour un projet Python
+# ===========================================
+
+# ---- Python compilé / cache ----
+__pycache__/
+*.py[cod]
+*$py.class
