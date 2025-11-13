@@ -40,7 +40,7 @@ def init_params(instance):
     # La matrice des noms de chaque membre du staff
     names = [staff["name"] for staff in data["staff"]]
     # La matrice des deadlines de chaques projets
-    D = [data["jobs"][j]["due_date"] for j in range(project_nb)]
+    D = [data["jobs"][j]["due_date"]-1 for j in range(project_nb)]
     # La matrice des pénalités de retards
     R=[data["jobs"][j]["daily_penalty"] for j in range(project_nb)]
 
